@@ -1,0 +1,104 @@
+| <kbd>G</kbd>                                                                  | Set the Eyedropper as the tool (pick a color from the screen)                  |
+| <kbd>T</kbd>                                                                  | Set the Text as the tool                                                       |
+| <kbd>P</kbd>                                                                  | Set the Pen as the tool                                                        |
+| <kbd>H</kbd>                                                                  | Set the Highlighter as the tool                                                |
+| <kbd>D</kbd>                                                                  | Set the Line as the tool                                                       |
+| <kbd>A</kbd>                                                                  | Set the Arrow as the tool                                                      |
+| <kbd>R</kbd>                                                                  | Set the Rectangle as the tool                                                  |
+| <kbd>C</kbd>                                                                  | Set the Circle as the tool                                                     |
+| <kbd>N</kbd>                                                                  | Set the Numbered arrow as the tool                                             |
+| <kbd>X</kbd>                                                                  | Set the Redact as the tool (blur || pixelate)                                  |
+| <kbd>←</kbd>, <kbd>↓</kbd>, <kbd>↑</kbd>, <kbd>→</kbd>                        | Move the selection                                                             |
+| <kbd>Shift</kbd> + <kbd>←</kbd>, <kbd>↓</kbd>, <kbd>↑</kbd>, <kbd>→</kbd>     | Move the selection faster                                                      |
+| <kbd>Alt</kbd> + <kbd>←</kbd>, <kbd>↓</kbd>, <kbd>↑</kbd>, <kbd>→</kbd>       | Resize the selection                                                           |
+| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd>, <kbd>↓</kbd>, <kbd>↑</kbd>, <kbd>→</kbd> | Resize the selection faster                                      |
+| <kbd>Return</kbd>                                                             | Finish with `general.to` (copy and save by default)                            |
+| <kbd>Ctrl</kbd> + <kbd>C</kbd>                                                | Copy to the clipboard and finish                                               |
+| <kbd>Ctrl</kbd> + <kbd>S</kbd>                                                | Save as a file and finish                                                      |
+| <kbd>Ctrl</kbd> + <kbd>P</kbd>                                                | Pin to the screen and finish                                                   |
+| <kbd>Esc</kbd>                                                                | Quit without taking the screenshot                                             |
+| <kbd>Ctrl</kbd> + <kbd>Z</kbd>                                                | Undo the last modification                                                     |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd>, <kbd>Ctrl</kbd> + <kbd>Y</kbd> | Redo the next modification                                                 |
+| <kbd>Ctrl</kbd> + <kbd>A</kbd>                                                | Select the whole monitor under the cursor                                      |
+| <kbd>Delete</kbd>, <kbd>Backspace</kbd>                                       | Delete the selected annotation                                                 |
+| <kbd>Space</kbd>                                                              | Toggle the visibility of the toolbar and the settings panels                   |
+| <kbd>M</kbd>                                                                  | Toggle the magnifier                                                           |
+| <kbd>[</kbd>, <kbd>]</kbd>                                                    | Decrease / increase the size (width or font) of the current tool               |
+| Double click on the selection                                                 | Finish with the default action, same as <kbd>Return</kbd>                      |
+| Right Click                                                                   | Clear the selection                                                            |
+| Mouse Wheel                                                                   | Change the tool's size (width or font)                                         |
+| Hold <kbd>Shift</kbd> while drawing                                           | Straight line, snaps to horizontal or vertical (Pen, Highlighter, Line, Arrow) |
+
+With the OCR tool active, <kbd>Return</kbd> and <kbd>Ctrl</kbd> + <kbd>C</kbd> copy the selected text, and <kbd>Ctrl</kbd> + <kbd>A</kbd> selects all recognized text. With the Eyedropper they copy the picked color.
+
+### Global
+
+- **KDE Plasma:** import [lumine-capture-shortcuts-kde.kksrc](docs/lumine-capture-shortcuts-kde.kksrc) in *System Settings -> Keyboard -> Shortcuts -> Import -> Custom Scheme*, or bind commands youself. Spectacle holds <kbd>Meta</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> and <kbd>Shift</kbd> + <kbd>Print</kbd> by default, so clear them there first if you want.
+- **COSMIC and others:** bind them in your bind settings.
+
+
+## Installation
+
+Packages are on the [releases page](https://github.com/Netflate/LumineCapture/releases/latest).
+
+> [!NOTE]
+> Tested only on **KDE Plasma**, **COSMIC** and **niri**. Other Wayland compositors may work but were never tried. **GNOME is not supported yet.**
+
+Packages are built for x86_64 & ARM64 (aarch64), except for Arch package, its x86_64 only.
+
+**Fedora 43+**
+
+From the [Copr repository](https://copr.fedorainfracloud.org/coprs/netflate/lumine-capture/)
+```sh
+sudo dnf copr enable netflate/lumine-capture
+sudo dnf install lumine-capture
+```
+or a single package from the releases page:
+```sh
+sudo dnf install https://github.com/Netflate/LumineCapture/releases/download/v0.3.0/lumine-capture-0.3.0-1.$(uname -m).rpm
+```
+
+**Ubuntu 24.04+ / Debian 13+**
+```sh
+wget https://github.com/Netflate/LumineCapture/releases/download/v0.3.0/lumine-capture_0.3.0-1_$(dpkg --print-architecture).deb
+sudo apt install ./lumine-capture_0.3.0-1_$(dpkg --print-architecture).deb
+```
+
+**Arch Linux**
+```sh
+curl -LO https://github.com/Netflate/LumineCapture/releases/download/v0.3.0/lumine-capture-0.3.0-1-x86_64.pkg.tar.zst
+sudo pacman -U lumine-capture-0.3.0-1-x86_64.pkg.tar.zst
+```
+or build it yourself from the [PKGBUILD](packaging/arch/PKGBUILD) (the only way for ARM on arch):
+```sh
+git clone https://github.com/Netflate/LumineCapture && cd LumineCapture/packaging/arch && makepkg -si
+```
+
+**aerynOS**
+```sh
+sudo moss it lumine-capture
+```
+
+## License
+
+Licensed under either of
+
+- Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE))
+- MIT license ([LICENSE-MIT](LICENSE-MIT))
+
+The bundled [Inter](https://github.com/rsms/inter) font is under the SIL Open Font License 1.1 ([LICENSE-OFL](assets/fonts/LICENSE-OFL.txt)).
+
+## Acknowledgments
+
+A lot of the reference for this project, including the layout of this README, was taken from [Spectacle](https://invent.kde.org/graphics/spectacle) and [Flameshot](https://github.com/flameshot-org/flameshot). Thanks to both projects and everyone who works on them.
+
+--- /usr/share/hypr/hyprland.lua ---
+-- This is an example Hyprland Lua config file.
+-- Refer to the wiki for more information.
+-- https://wiki.hypr.land/configuring/
+
+-- Please note not all available settings / options are set here.
+-- For a full list, see the wiki
+
+-- You can (and should!!) split this configuration into multiple files
+-- Create your files separately and then require them like this:

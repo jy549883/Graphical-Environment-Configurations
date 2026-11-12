@@ -1,0 +1,12 @@
+Original report: /mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/Perplexity-Communications/02-pre-initialization-20261112-000059-xehS7c/pre-initialization.txt
+
+Chunk sizes in bytes:
+ 7970 /mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/Perplexity-Communications/03-report-chunks-20261112-004713-pjvzdP/part-001.txt
+ 7920 /mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/Perplexity-Communications/03-report-chunks-20261112-004713-pjvzdP/part-002.txt
+ 7948 /mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/Perplexity-Communications/03-report-chunks-20261112-004713-pjvzdP/part-003.txt
+ 7869 /mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/Perplexity-Communications/03-report-chunks-20261112-004713-pjvzdP/part-004.txt
+ 7926 /mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/Perplexity-Communications/03-report-chunks-20261112-004713-pjvzdP/part-005.txt
+ 7995 /mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/Perplexity-Communications/03-report-chunks-20261112-004713-pjvzdP/part-006.txt
+ 7977 /mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/Perplexity-Communications/03-report-chunks-20261112-004713-pjvzdP/part-007.txt
+ 5068 /mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/Perplexity-Communications/03-report-chunks-20261112-004713-pjvzdP/part-008.txt
+60673 total

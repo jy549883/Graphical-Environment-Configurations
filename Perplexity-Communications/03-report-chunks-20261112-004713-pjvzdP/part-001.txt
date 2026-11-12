@@ -1,0 +1,207 @@
+=== Current environment ===
+Session type: wayland
+Desktop: KDE
+Configuration directory: /home/jy549883/.config
+NIRI_CONFIG: not set
+
+=== Selected existing user configuration paths ===
+
+--- /home/jy549883/.config/niri ---
+Not present
+
+--- /home/jy549883/.config/hypr ---
+Not present
+
+--- /home/jy549883/.config/mako ---
+Not present
+
+--- /home/jy549883/.config/nwg-dock-hyprland ---
+Not present
+
+--- /home/jy549883/.config/rofi ---
+Not present
+
+--- /home/jy549883/.config/waybar ---
+Not present
+
+--- /home/jy549883/.config/yazi ---
+Not present
+
+--- /home/jy549883/.config/xdg-desktop-portal ---
+Not present
+
+=== Other potentially relevant top-level configuration names ===
+
+=== Existing user service and autostart entries ===
+
+--- /home/jy549883/.config/systemd/user ---
+d /home/jy549883/.config/systemd/user -> 
+d /home/jy549883/.config/systemd/user/sockets.target.wants -> 
+l /home/jy549883/.config/systemd/user/sockets.target.wants/podman.socket -> /usr/lib/systemd/user/podman.socket
+d /home/jy549883/.config/systemd/user/timers.target.wants -> 
+l /home/jy549883/.config/systemd/user/timers.target.wants/spotify-easyrpm.timer -> /home/jy549883/.local/share/systemd/user/spotify-easyrpm.timer
+f /home/jy549883/.config/systemd/user/openlogi-agent.service -> 
+d /home/jy549883/.config/systemd/user/graphical-session.target.wants -> 
+l /home/jy549883/.config/systemd/user/graphical-session.target.wants/openlogi-agent.service -> /home/jy549883/.config/systemd/user/openlogi-agent.service
+
+--- /home/jy549883/.config/autostart ---
+d /home/jy549883/.config/autostart -> 
+f /home/jy549883/.config/autostart/org.kde.konsole.desktop -> 
+f /home/jy549883/.config/autostart/notesnook.desktop -> 
+f /home/jy549883/.config/autostart/remmina-applet.desktop -> 
+f /home/jy549883/.config/autostart/megasync.desktop -> 
+f /home/jy549883/.config/autostart/koofr.desktop -> 
+f /home/jy549883/.config/autostart/pcloud.desktop -> 
+f /home/jy549883/.config/autostart/ai.storyteller.artcraft-launcher.desktop -> 
+
+=== Installed defaults, documentation, and session launchers ===
+
+--- /usr/share/doc/packages/niri/default-config.kdl ---
+// This config is in the KDL format: https://kdl.dev
+// "/-" comments out the following node.
+// Check the wiki for a full description of the configuration:
+// https://niri-wm.github.io/niri/Configuration:-Introduction
+
+// Input device configuration.
+// Find the full list of options on the wiki:
+// https://niri-wm.github.io/niri/Configuration:-Input
+input {
+    keyboard {
+        xkb {
+            // You can set rules, model, layout, variant and options.
+            // For more information, see xkeyboard-config(7).
+
+            // For example:
+            // layout "us,ru"
+            // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
+
+            // If this section is empty, niri will fetch xkb settings
+            // from org.freedesktop.locale1. You can control these using
+            // localectl set-x11-keymap.
+        }
+
+        // Enable numlock on startup, omitting this setting disables it.
+        numlock
+    }
+
+    // Next sections include libinput settings.
+    // Omitting settings disables them, or leaves them at their default values.
+    // All commented-out settings here are examples, not defaults.
+    touchpad {
+        // off
+        tap
+        // dwt
+        // dwtp
+        // drag false
+        // drag-lock
+        natural-scroll
+        // accel-speed 0.2
+        // accel-profile "flat"
+        // scroll-method "two-finger"
+        // disabled-on-external-mouse
+    }
+
+    mouse {
+        // off
+        // natural-scroll
+        // accel-speed 0.2
+        // accel-profile "flat"
+        // scroll-method "no-scroll"
+    }
+
+    trackpoint {
+        // off
+        // natural-scroll
+        // accel-speed 0.2
+        // accel-profile "flat"
+        // scroll-method "on-button-down"
+        // scroll-button 273
+        // scroll-button-lock
+        // middle-emulation
+    }
+
+    // Uncomment this to make the mouse warp to the center of newly focused windows.
+    // warp-mouse-to-focus
+
+    // Focus windows and outputs automatically when moving the mouse into them.
+    // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
+    // focus-follows-mouse max-scroll-amount="0%"
+}
+
+// You can configure outputs by their name, which you can find
+// by running `niri msg outputs` while inside a niri instance.
+// The built-in laptop monitor is usually called "eDP-1".
+// Find more information on the wiki:
+// https://niri-wm.github.io/niri/Configuration:-Outputs
+// Remember to uncomment the node by removing "/-"!
+/-output "eDP-1" {
+    // Uncomment this line to disable this output.
+    // off
+
+    // Resolution and, optionally, refresh rate of the output.
+    // The format is "<width>x<height>" or "<width>x<height>@<refresh rate>".
+    // If the refresh rate is omitted, niri will pick the highest refresh rate
+    // for the resolution.
+    // If the mode is omitted altogether or is invalid, niri will pick one automatically.
+    // Run `niri msg outputs` while inside a niri instance to list all outputs and their modes.
+    mode "1920x1080@120.030"
+
+    // You can use integer or fractional scale, for example use 1.5 for 150% scale.
+    scale 2
+
+    // Transform allows to rotate the output counter-clockwise, valid values are:
+    // normal, 90, 180, 270, flipped, flipped-90, flipped-180 and flipped-270.
+    transform "normal"
+
+    // Position of the output in the global coordinate space.
+    // This affects directional monitor actions like "focus-monitor-left", and cursor movement.
+    // The cursor can only move between directly adjacent outputs.
+    // Output scale and rotation has to be taken into account for positioning:
+    // outputs are sized in logical, or scaled, pixels.
+    // For example, a 3840×2160 output with scale 2.0 will have a logical size of 1920×1080,
+    // so to put another output directly adjacent to it on the right, set its x to 1920.
+    // If the position is unset or results in an overlap, the output is instead placed
+    // automatically.
+    position x=1280 y=0
+}
+
+// Settings that influence how windows are positioned and sized.
+// Find more information on the wiki:
+// https://niri-wm.github.io/niri/Configuration:-Layout
+layout {
+    // Set gaps around windows in logical pixels.
+    gaps 16
+
+    // When to center a column when changing focus, options are:
+    // - "never", default behavior, focusing an off-screen column will keep at the left
+    //   or right edge of the screen.
+    // - "always", the focused column will always be centered.
+    // - "on-overflow", focusing a column will center it if it doesn't fit
+    //   together with the previously focused column.
+    center-focused-column "never"
+
+    // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
+    preset-column-widths {
+        // Proportion sets the width as a fraction of the output width, taking gaps into account.
+        // For example, you can perfectly fit four windows sized "proportion 0.25" on an output.
+        // The default preset widths are 1/3, 1/2 and 2/3 of the output.
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+
+        // Fixed sets the width in logical pixels exactly.
+        // fixed 1920
+    }
+
+    // You can also customize the heights that "switch-preset-window-height" (Mod+Ctrl+Shift+R) toggles between.
+    // preset-window-heights { }
+
+    // You can change the default width of the new windows.
+    default-column-width { proportion 0.5; }
+    // If you leave the brackets empty, the windows themselves will decide their initial width.
+    // default-column-width {}
+
+    // By default focus ring and border are rendered as a solid background rectangle
+    // behind windows. That is, they will show up through semitransparent windows.
+    // This is because windows using client-side decorations can have an arbitrary shape.
+    //
