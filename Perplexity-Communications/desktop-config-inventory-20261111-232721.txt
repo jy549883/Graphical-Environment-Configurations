@@ -1,0 +1,698 @@
+User configuration directory: /home/jy549883/.config
+NIRI_CONFIG: not set
+
+========== niri ==========
+niri-26.04-1.5.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/bin/niri
+/usr/bin/niri-session
+/usr/lib/systemd/user/niri-shutdown.target
+/usr/lib/systemd/user/niri.service
+/usr/share/bash-completion/completions
+/usr/share/bash-completion/completions/niri.bash
+/usr/share/doc/packages/niri
+/usr/share/doc/packages/niri/README.md
+/usr/share/doc/packages/niri/default-config.kdl
+/usr/share/doc/packages/niri/wiki
+/usr/share/doc/packages/niri/wiki/Accessibility.md
+/usr/share/doc/packages/niri/wiki/Application-Issues.md
+/usr/share/doc/packages/niri/wiki/Configuration:-Animations.md
+/usr/share/doc/packages/niri/wiki/Configuration:-Debug-Options.md
+/usr/share/doc/packages/niri/wiki/Configuration:-Gestures.md
+/usr/share/doc/packages/niri/wiki/Configuration:-Include.md
+/usr/share/doc/packages/niri/wiki/Configuration:-Input.md
+/usr/share/doc/packages/niri/wiki/Configuration:-Introduction.md
+/usr/share/doc/packages/niri/wiki/Configuration:-Key-Bindings.md
+/usr/share/doc/packages/niri/wiki/Configuration:-Layer-Rules.md
+/usr/share/doc/packages/niri/wiki/Configuration:-Layout.md
+/usr/share/doc/packages/niri/wiki/Configuration:-Miscellaneous.md
+/usr/share/doc/packages/niri/wiki/Configuration:-Named-Workspaces.md
+/usr/share/doc/packages/niri/wiki/Configuration:-Outputs.md
+/usr/share/doc/packages/niri/wiki/Configuration:-Overview.md
+/usr/share/doc/packages/niri/wiki/Configuration:-Recent-Windows.md
+/usr/share/doc/packages/niri/wiki/Configuration:-Switch-Events.md
+/usr/share/doc/packages/niri/wiki/Configuration:-Window-Rules.md
+/usr/share/doc/packages/niri/wiki/Development:-Animation-Timing.md
+/usr/share/doc/packages/niri/wiki/Development:-Design-Principles.md
+/usr/share/doc/packages/niri/wiki/Development:-Developing-niri.md
+/usr/share/doc/packages/niri/wiki/Development:-Documenting-niri.md
+/usr/share/doc/packages/niri/wiki/Development:-Fractional-Layout.md
+/usr/share/doc/packages/niri/wiki/Development:-Redraw-Loop.md
+/usr/share/doc/packages/niri/wiki/Development:-Releasing-niri.md
+/usr/share/doc/packages/niri/wiki/Example-systemd-Setup.md
+/usr/share/doc/packages/niri/wiki/FAQ.md
+/usr/share/doc/packages/niri/wiki/Floating-Windows.md
+/usr/share/doc/packages/niri/wiki/Fullscreen-and-Maximize.md
+/usr/share/doc/packages/niri/wiki/Gestures.md
+/usr/share/doc/packages/niri/wiki/Getting-Started.md
+/usr/share/doc/packages/niri/wiki/IPC.md
+/usr/share/doc/packages/niri/wiki/Important-Software.md
+/usr/share/doc/packages/niri/wiki/Integrating-niri.md
+/usr/share/doc/packages/niri/wiki/Layer‐Shell-Components.md
+/usr/share/doc/packages/niri/wiki/Name-and-Logo.md
+/usr/share/doc/packages/niri/wiki/Nvidia.md
+/usr/share/doc/packages/niri/wiki/Overview.md
+/usr/share/doc/packages/niri/wiki/Packaging-niri.md
+/usr/share/doc/packages/niri/wiki/README.md
+/usr/share/doc/packages/niri/wiki/Screencasting.md
+/usr/share/doc/packages/niri/wiki/Tabs.md
+/usr/share/doc/packages/niri/wiki/Window-Effects.md
+/usr/share/doc/packages/niri/wiki/Workspaces.md
+/usr/share/doc/packages/niri/wiki/Xwayland.md
+/usr/share/doc/packages/niri/wiki/_Sidebar.md
+/usr/share/doc/packages/niri/wiki/_assets
+/usr/share/doc/packages/niri/wiki/_assets/icons
+/usr/share/doc/packages/niri/wiki/_assets/icons/logo.svg
+/usr/share/doc/packages/niri/wiki/_assets/stylesheets
+/usr/share/doc/packages/niri/wiki/_assets/stylesheets/niri.css
+/usr/share/doc/packages/niri/wiki/examples
+/usr/share/doc/packages/niri/wiki/examples/close_custom_shader.frag
+/usr/share/doc/packages/niri/wiki/examples/open_custom_shader.frag
+/usr/share/doc/packages/niri/wiki/examples/resize_custom_shader.frag
+/usr/share/doc/packages/niri/wiki/logo
+/usr/share/doc/packages/niri/wiki/logo/niri-icon-smol.svg
+/usr/share/doc/packages/niri/wiki/logo/niri-icon.svg
+/usr/share/doc/packages/niri/wiki/logo/niri-logo-smol.svg
+/usr/share/doc/packages/niri/wiki/logo/niri-logo.svg
+/usr/share/fish
+/usr/share/fish/vendor_completions.d
+/usr/share/fish/vendor_completions.d/niri.fish
+/usr/share/licenses/niri
+/usr/share/licenses/niri/LICENSE
+/usr/share/wayland-sessions
+/usr/share/wayland-sessions/niri.desktop
+/usr/share/xdg-desktop-portal
+/usr/share/xdg-desktop-portal/niri-portals.conf
+/usr/share/zsh
+/usr/share/zsh/site-functions
+/usr/share/zsh/site-functions/_niri
+
+========== niri-settings ==========
+niri-settings-0~git.20251225.d20e9f5-1.3.noarch
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/bin/niri-settings
+/usr/libexec/niri-settings
+/usr/libexec/niri-settings/niri_settings.py
+/usr/libexec/niri-settings/ui
+/usr/libexec/niri-settings/ui/__init__.py
+/usr/libexec/niri-settings/ui/all_tabs.py
+/usr/libexec/niri-settings/ui/conf_path.py
+/usr/libexec/niri-settings/ui/files_tab.py
+/usr/libexec/niri-settings/ui/kdl_highlighter.py
+/usr/libexec/niri-settings/ui/keybinds_tab.py
+/usr/libexec/niri-settings/ui/settings_window.py
+/usr/libexec/niri-settings/ui/tools_tab.py
+/usr/libexec/niri-settings/ui/widgets.py
+/usr/share/applications/niri-settings.desktop
+/usr/share/doc/packages/niri-settings
+/usr/share/doc/packages/niri-settings/README.md
+/usr/share/icons/hicolor/scalable/apps/niri-settings.svg
+/usr/share/licenses/niri-settings
+/usr/share/licenses/niri-settings/LICENSE
+/usr/share/niri-settings
+/usr/share/niri-settings/translations
+/usr/share/niri-settings/translations/niri_settings.qm
+/usr/share/niri-settings/translations/niri_settings_de.qm
+/usr/share/niri-settings/translations/niri_settings_et.qm
+/usr/share/niri-settings/translations/niri_settings_fr.qm
+/usr/share/niri-settings/translations/niri_settings_id.qm
+/usr/share/niri-settings/translations/niri_settings_it.qm
+/usr/share/niri-settings/translations/niri_settings_nl.qm
+/usr/share/niri-settings/translations/niri_settings_ru.qm
+/usr/share/niri-settings/translations/niri_settings_zh_CN.qm
+
+========== lumine-capture ==========
+lumine-capture-0.3.0-1.1.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/bin/lumine-capture
+/usr/share/applications/lumine-capture.desktop
+/usr/share/doc/packages/lumine-capture
+/usr/share/doc/packages/lumine-capture/README.md
+/usr/share/doc/packages/lumine-capture/lumine-capture-shortcuts-kde.kksrc
+/usr/share/icons/hicolor/128x128/apps/lumine-capture.png
+/usr/share/icons/hicolor/128x128/apps/lumine-pin.png
+/usr/share/icons/hicolor/16x16/apps/lumine-capture.png
+/usr/share/icons/hicolor/16x16/apps/lumine-pin.png
+/usr/share/icons/hicolor/22x22/apps/lumine-capture.png
+/usr/share/icons/hicolor/22x22/apps/lumine-pin.png
+/usr/share/icons/hicolor/24x24/apps/lumine-capture.png
+/usr/share/icons/hicolor/24x24/apps/lumine-pin.png
+/usr/share/icons/hicolor/256x256/apps/lumine-capture.png
+/usr/share/icons/hicolor/256x256/apps/lumine-pin.png
+/usr/share/icons/hicolor/32x32/apps/lumine-capture.png
+/usr/share/icons/hicolor/32x32/apps/lumine-pin.png
+/usr/share/icons/hicolor/48x48/apps/lumine-capture.png
+/usr/share/icons/hicolor/48x48/apps/lumine-pin.png
+/usr/share/icons/hicolor/512x512/apps/lumine-capture.png
+/usr/share/icons/hicolor/512x512/apps/lumine-pin.png
+/usr/share/icons/hicolor/64x64/apps/lumine-capture.png
+/usr/share/icons/hicolor/64x64/apps/lumine-pin.png
+/usr/share/icons/hicolor/scalable/apps/lumine-capture.svg
+/usr/share/icons/hicolor/scalable/apps/lumine-pin.svg
+/usr/share/licenses/lumine-capture
+/usr/share/licenses/lumine-capture/LICENSE-APACHE
+/usr/share/licenses/lumine-capture/LICENSE-MIT
+/usr/share/licenses/lumine-capture/LICENSE-OFL.txt
+
+========== opensuse-welcome-launcher ==========
+opensuse-welcome-launcher-1.0-4.3.noarch
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/bin/opensuse-welcome-launcher
+/usr/etc/xdg/autostart/org.opensuse.opensuse_welcome_launcher.desktop
+/usr/share/applications/org.opensuse.opensuse_welcome_launcher.desktop
+/usr/share/icons/hicolor/scalable/apps/org.opensuse.opensuse_welcome_launcher.svg
+/usr/share/icons/hicolor/symbolic/apps/org.opensuse.opensuse_welcome_launcher-symbolic.svg
+/usr/share/opensuse-welcome-launcher
+
+========== patterns-base-base ==========
+patterns-base-base-20241218-37.1.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/share/doc/packages/patterns
+/usr/share/doc/packages/patterns/base.txt
+
+========== thunar ==========
+thunar-4.20.10-1.1.x86_64
+
+--- RPM-designated configuration files ---
+/etc/xdg/Thunar/uca.xml
+
+--- Complete installed file list ---
+/etc/xdg/Thunar
+/etc/xdg/Thunar/uca.xml
+/usr/bin/Thunar
+/usr/bin/thunar
+/usr/bin/thunar-settings
+/usr/lib/systemd/user/thunar.service
+/usr/lib64/thunarx-3
+/usr/lib64/thunarx-3/thunar-apr.so
+/usr/lib64/thunarx-3/thunar-sbr.so
+/usr/lib64/thunarx-3/thunar-uca.so
+/usr/lib64/thunarx-3/thunar-wallpaper-plugin.so
+/usr/lib64/xfce4/panel/plugins/libthunar-tpa.so
+/usr/libexec/Thunar
+/usr/libexec/Thunar/thunar-sendto-email
+/usr/share/Thunar
+/usr/share/Thunar/sendto
+/usr/share/Thunar/sendto/thunar-sendto-email.desktop
+/usr/share/applications/thunar-bulk-rename.desktop
+/usr/share/applications/thunar-settings.desktop
+/usr/share/applications/thunar.desktop
+/usr/share/dbus-1/services/org.xfce.FileManager.service
+/usr/share/dbus-1/services/org.xfce.Thunar.FileManager1.service
+/usr/share/dbus-1/services/org.xfce.Thunar.service
+/usr/share/doc/packages/thunar
+/usr/share/doc/packages/thunar/AUTHORS
+/usr/share/doc/packages/thunar/FAQ
+/usr/share/doc/packages/thunar/HACKING
+/usr/share/doc/packages/thunar/NEWS
+/usr/share/doc/packages/thunar/README.gtkrc
+/usr/share/doc/packages/thunar/README.md
+/usr/share/doc/packages/thunar/THANKS
+/usr/share/icons/hicolor/128x128/apps/org.xfce.thunar.png
+/usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png
+/usr/share/icons/hicolor/16x16/stock/navigation/stock_folder-copy.png
+/usr/share/icons/hicolor/16x16/stock/navigation/stock_folder-move.png
+/usr/share/icons/hicolor/24x24/stock/navigation/stock_folder-copy.png
+/usr/share/icons/hicolor/24x24/stock/navigation/stock_folder-move.png
+/usr/share/icons/hicolor/48x48/apps/org.xfce.thunar.png
+/usr/share/icons/hicolor/scalable/apps/org.xfce.thunar.svg
+/usr/share/licenses/thunar
+/usr/share/licenses/thunar/COPYING
+/usr/share/man/man1/Thunar.1.gz
+/usr/share/man/man1/thunar.1.gz
+/usr/share/metainfo/org.xfce.thunar.appdata.xml
+/usr/share/xfce4/panel/plugins/thunar-tpa.desktop
+
+========== xdg-desktop-portal ==========
+xdg-desktop-portal-1.22.1-2.1.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/lib/systemd/user/xdg-desktop-portal-rewrite-launchers.service
+/usr/lib/systemd/user/xdg-desktop-portal.service
+/usr/lib/systemd/user/xdg-document-portal.service
+/usr/lib/systemd/user/xdg-permission-store.service
+/usr/libexec/xdg-desktop-portal
+/usr/libexec/xdg-desktop-portal-rewrite-launchers
+/usr/libexec/xdg-desktop-portal-validate-icon
+/usr/libexec/xdg-desktop-portal-validate-sound
+/usr/libexec/xdg-document-portal
+/usr/libexec/xdg-permission-store
+/usr/share/dbus-1
+/usr/share/dbus-1/interfaces
+/usr/share/dbus-1/interfaces/org.freedesktop.host.portal.Registry.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.Access.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.Account.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.AppChooser.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.Background.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.Clipboard.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.DynamicLauncher.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.Email.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.FileChooser.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.GlobalShortcuts.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.Inhibit.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.InputCapture.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.Lockdown.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.Notification.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.PermissionStore.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.Print.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.RemoteDesktop.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.Request.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.ScreenCast.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.Screenshot.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.Secret.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.Session.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.Settings.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.Usb.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.impl.portal.Wallpaper.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Account.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Background.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Camera.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Clipboard.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Documents.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.DynamicLauncher.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Email.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.FileChooser.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.FileTransfer.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.GameMode.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.GlobalShortcuts.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Inhibit.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.InputCapture.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Location.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.MemoryMonitor.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.NetworkMonitor.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Notification.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.OpenURI.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.PowerProfileMonitor.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Print.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.ProxyResolver.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Realtime.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.RemoteDesktop.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Request.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.ScreenCast.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Screenshot.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Secret.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Session.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Settings.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Trash.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Usb.xml
+/usr/share/dbus-1/interfaces/org.freedesktop.portal.Wallpaper.xml
+/usr/share/dbus-1/services
+/usr/share/dbus-1/services/org.freedesktop.impl.portal.PermissionStore.service
+/usr/share/dbus-1/services/org.freedesktop.portal.Desktop.service
+/usr/share/dbus-1/services/org.freedesktop.portal.Documents.service
+/usr/share/licenses/xdg-desktop-portal
+/usr/share/licenses/xdg-desktop-portal/COPYING
+/usr/share/man/man5/portals.conf.5.gz
+/usr/share/xdg-desktop-portal
+/usr/share/xdg-desktop-portal/portals
+
+========== greetd-gtkgreet-hyprland ==========
+greetd-gtkgreet-hyprland-1.0-1.2.noarch
+
+--- RPM-designated configuration files ---
+/etc/greetd/config.toml
+/etc/greetd/environments
+
+--- Complete installed file list ---
+/etc/greetd/config.toml
+/etc/greetd/environments
+
+========== grim ==========
+grim-1.5.0-1.4.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/bin/grim
+/usr/share/doc/packages/grim
+/usr/share/doc/packages/grim/README.md
+/usr/share/licenses/grim
+/usr/share/licenses/grim/LICENSE
+/usr/share/man/man1/grim.1.gz
+
+========== hyprland ==========
+hyprland-0.57.0-1.1.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/bin/Hyprland
+/usr/bin/hyprctl
+/usr/bin/hyprland
+/usr/bin/start-hyprland
+/usr/lib/systemd/user/hyprland-session.target
+/usr/share/doc/packages/hyprland
+/usr/share/doc/packages/hyprland/README.md
+/usr/share/hypr
+/usr/share/hypr/hyprland.lua
+/usr/share/hypr/lockdead.png
+/usr/share/hypr/lockdead2.png
+/usr/share/hypr/stubs
+/usr/share/hypr/stubs/hl.meta.lua
+/usr/share/licenses/hyprland
+/usr/share/licenses/hyprland/LICENSE
+/usr/share/man/man1/Hyprland.1.gz
+/usr/share/man/man1/hyprctl.1.gz
+/usr/share/wayland-sessions
+/usr/share/wayland-sessions/hyprland.desktop
+/usr/share/xdg-desktop-portal
+/usr/share/xdg-desktop-portal/hyprland-portals.conf
+
+========== hyprland-plugin-borders-plus-plus ==========
+hyprland-plugin-borders-plus-plus-0.57.0-1.1.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/lib64/hyprland
+/usr/lib64/hyprland/plugins
+/usr/lib64/hyprland/plugins/borders-plus-plus.so
+/usr/share/licenses/hyprland-plugin-borders-plus-plus
+/usr/share/licenses/hyprland-plugin-borders-plus-plus/LICENSE
+
+========== hyprland-plugin-csgo-vulkan-fix ==========
+hyprland-plugin-csgo-vulkan-fix-0.57.0-1.1.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/lib64/hyprland
+/usr/lib64/hyprland/plugins
+/usr/lib64/hyprland/plugins/csgo-vulkan-fix.so
+/usr/share/licenses/hyprland-plugin-csgo-vulkan-fix
+/usr/share/licenses/hyprland-plugin-csgo-vulkan-fix/LICENSE
+
+========== hyprland-plugin-hyprbars ==========
+hyprland-plugin-hyprbars-0.57.0-1.1.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/lib64/hyprland
+/usr/lib64/hyprland/plugins
+/usr/lib64/hyprland/plugins/hyprbars.so
+/usr/share/licenses/hyprland-plugin-hyprbars
+/usr/share/licenses/hyprland-plugin-hyprbars/LICENSE
+
+========== hyprland-plugin-hyprfocus ==========
+hyprland-plugin-hyprfocus-0.57.0-1.1.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/lib64/hyprland
+/usr/lib64/hyprland/plugins
+/usr/lib64/hyprland/plugins/hyprfocus.so
+/usr/share/licenses/hyprland-plugin-hyprfocus
+/usr/share/licenses/hyprland-plugin-hyprfocus/LICENSE
+
+========== hyprland-qtutils ==========
+hyprland-qtutils-0.1.5-2.14.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/bin/hyprland-dialog
+/usr/bin/hyprland-update-screen
+/usr/share/licenses/hyprland-qtutils
+/usr/share/licenses/hyprland-qtutils/LICENSE
+
+========== hyprpaper ==========
+hyprpaper-0.8.4-1.2.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/bin/hyprpaper
+/usr/lib/systemd/user/hyprpaper.service
+/usr/share/licenses/hyprpaper
+/usr/share/licenses/hyprpaper/LICENSE
+
+========== hyprpicker ==========
+hyprpicker-0.4.7-1.2.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/bin/hyprpicker
+/usr/share/doc/packages/hyprpicker
+/usr/share/doc/packages/hyprpicker/README.md
+/usr/share/licenses/hyprpicker
+/usr/share/licenses/hyprpicker/LICENSE
+/usr/share/man/man1/hyprpicker.1.gz
+
+========== mako ==========
+mako-1.11.0-1.4.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/bin/mako
+/usr/bin/makoctl
+/usr/share/dbus-1
+/usr/share/dbus-1/services
+/usr/share/dbus-1/services/fr.emersion.mako.service
+/usr/share/doc/packages/mako
+/usr/share/doc/packages/mako/README.md
+/usr/share/licenses/mako
+/usr/share/licenses/mako/LICENSE
+/usr/share/man/man1/mako.1.gz
+/usr/share/man/man1/makoctl.1.gz
+/usr/share/man/man5/mako.5.gz
+
+========== nwg-dock-hyprland ==========
+nwg-dock-hyprland-0.4.10-1.4.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/bin/nwg-dock-hyprland
+/usr/share/licenses/nwg-dock-hyprland
+/usr/share/licenses/nwg-dock-hyprland/LICENSE
+/usr/share/nwg-dock-hyprland
+/usr/share/nwg-dock-hyprland/images
+/usr/share/nwg-dock-hyprland/images/grid.svg
+/usr/share/nwg-dock-hyprland/images/icon-missing.svg
+/usr/share/nwg-dock-hyprland/images/task-empty-vertical.svg
+/usr/share/nwg-dock-hyprland/images/task-empty.svg
+/usr/share/nwg-dock-hyprland/images/task-multiple-vertical.svg
+/usr/share/nwg-dock-hyprland/images/task-multiple.svg
+/usr/share/nwg-dock-hyprland/images/task-single-vertical.svg
+/usr/share/nwg-dock-hyprland/images/task-single.svg
+/usr/share/nwg-dock-hyprland/style.css
+
+========== patterns-hyprland-hyprland ==========
+patterns-hyprland-hyprland-20260129-2.2.noarch
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/share/doc/packages/patterns
+/usr/share/doc/packages/patterns/hyprland.txt
+
+========== patterns-hyprland-hyprland_extra ==========
+patterns-hyprland-hyprland_extra-20260129-2.2.noarch
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/share/doc/packages/patterns
+/usr/share/doc/packages/patterns/hyprland_extra.txt
+
+========== rofi-wayland ==========
+rofi-wayland-1.7.9+wayland1+git.1757683229.9b0363ca-1.6.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/bin/rofi
+/usr/bin/rofi-sensible-terminal
+/usr/bin/rofi-theme-selector
+/usr/share/applications/rofi-theme-selector.desktop
+/usr/share/applications/rofi.desktop
+/usr/share/doc/packages/rofi-wayland
+/usr/share/doc/packages/rofi-wayland/Changelog
+/usr/share/doc/packages/rofi-wayland/README.md
+/usr/share/icons/hicolor/scalable/apps/rofi.svg
+/usr/share/licenses/rofi-wayland
+/usr/share/licenses/rofi-wayland/COPYING
+/usr/share/man/man1/rofi-sensible-terminal.1.gz
+/usr/share/man/man1/rofi-theme-selector.1.gz
+/usr/share/man/man1/rofi.1.gz
+/usr/share/man/man5/rofi-actions.5.gz
+/usr/share/man/man5/rofi-debugging.5.gz
+/usr/share/man/man5/rofi-dmenu.5.gz
+/usr/share/man/man5/rofi-keys.5.gz
+/usr/share/man/man5/rofi-script.5.gz
+/usr/share/man/man5/rofi-theme.5.gz
+/usr/share/man/man5/rofi-thumbnails.5.gz
+/usr/share/rofi
+/usr/share/rofi/themes
+/usr/share/rofi/themes/Adapta-Nokto.rasi
+/usr/share/rofi/themes/Arc-Dark.rasi
+/usr/share/rofi/themes/Arc.rasi
+/usr/share/rofi/themes/DarkBlue.rasi
+/usr/share/rofi/themes/Indego.rasi
+/usr/share/rofi/themes/Monokai.rasi
+/usr/share/rofi/themes/Paper.rasi
+/usr/share/rofi/themes/android_notification.rasi
+/usr/share/rofi/themes/arthur.rasi
+/usr/share/rofi/themes/blue.rasi
+/usr/share/rofi/themes/c64.rasi
+/usr/share/rofi/themes/dmenu.rasi
+/usr/share/rofi/themes/docu.rasi
+/usr/share/rofi/themes/fancy.rasi
+/usr/share/rofi/themes/fancy2.rasi
+/usr/share/rofi/themes/fullscreen-preview.rasi
+/usr/share/rofi/themes/glue_pro_blue.rasi
+/usr/share/rofi/themes/gruvbox-common.rasinc
+/usr/share/rofi/themes/gruvbox-dark-hard.rasi
+/usr/share/rofi/themes/gruvbox-dark-soft.rasi
+/usr/share/rofi/themes/gruvbox-dark.rasi
+/usr/share/rofi/themes/gruvbox-light-hard.rasi
+/usr/share/rofi/themes/gruvbox-light-soft.rasi
+/usr/share/rofi/themes/gruvbox-light.rasi
+/usr/share/rofi/themes/iggy.jpg
+/usr/share/rofi/themes/iggy.rasi
+/usr/share/rofi/themes/lb.rasi
+/usr/share/rofi/themes/material.rasi
+/usr/share/rofi/themes/paper-float.rasi
+/usr/share/rofi/themes/purple.rasi
+/usr/share/rofi/themes/sidebar-v2.rasi
+/usr/share/rofi/themes/sidebar.rasi
+/usr/share/rofi/themes/solarized.rasi
+/usr/share/rofi/themes/solarized_alternate.rasi
+
+========== slurp ==========
+slurp-1.6.0-1.6.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/bin/slurp
+/usr/share/man/man1/slurp.1.gz
+
+========== swaybar ==========
+swaybar-1.12-12.3.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/bin/swaybar
+/usr/share/bash-completion/completions/swaybar
+/usr/share/man/man5/sway-bar.5.gz
+/usr/share/man/man7/swaybar-protocol.7.gz
+
+========== waybar ==========
+waybar-0.15.0-1.7.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/bin/waybar
+/usr/lib/systemd/user/waybar.service
+/usr/share/man/man5/waybar-backlight-slider.5.gz
+/usr/share/man/man5/waybar-backlight.5.gz
+/usr/share/man/man5/waybar-battery.5.gz
+/usr/share/man/man5/waybar-bluetooth.5.gz
+/usr/share/man/man5/waybar-cffi.5.gz
+/usr/share/man/man5/waybar-clock.5.gz
+/usr/share/man/man5/waybar-cpu.5.gz
+/usr/share/man/man5/waybar-custom.5.gz
+/usr/share/man/man5/waybar-disk.5.gz
+/usr/share/man/man5/waybar-dwl-tags.5.gz
+/usr/share/man/man5/waybar-dwl-window.5.gz
+/usr/share/man/man5/waybar-ext-workspaces.5.gz
+/usr/share/man/man5/waybar-gamemode.5.gz
+/usr/share/man/man5/waybar-gps.5.gz
+/usr/share/man/man5/waybar-hyprland-language.5.gz
+/usr/share/man/man5/waybar-hyprland-submap.5.gz
+/usr/share/man/man5/waybar-hyprland-window.5.gz
+/usr/share/man/man5/waybar-hyprland-workspaces.5.gz
+/usr/share/man/man5/waybar-idle-inhibitor.5.gz
+/usr/share/man/man5/waybar-image.5.gz
+/usr/share/man/man5/waybar-inhibitor.5.gz
+/usr/share/man/man5/waybar-jack.5.gz
+/usr/share/man/man5/waybar-keyboard-state.5.gz
+/usr/share/man/man5/waybar-memory.5.gz
+/usr/share/man/man5/waybar-menu.5.gz
+/usr/share/man/man5/waybar-mpd.5.gz
+/usr/share/man/man5/waybar-mpris.5.gz
+/usr/share/man/man5/waybar-network.5.gz
+/usr/share/man/man5/waybar-niri-language.5.gz
+/usr/share/man/man5/waybar-niri-window.5.gz
+/usr/share/man/man5/waybar-niri-workspaces.5.gz
+/usr/share/man/man5/waybar-power-profiles-daemon.5.gz
+/usr/share/man/man5/waybar-privacy.5.gz
+/usr/share/man/man5/waybar-pulseaudio-slider.5.gz
+/usr/share/man/man5/waybar-pulseaudio.5.gz
+/usr/share/man/man5/waybar-river-layout.5.gz
+/usr/share/man/man5/waybar-river-mode.5.gz
+/usr/share/man/man5/waybar-river-tags.5.gz
+/usr/share/man/man5/waybar-river-window.5.gz
+/usr/share/man/man5/waybar-sndio.5.gz
+/usr/share/man/man5/waybar-states.5.gz
+/usr/share/man/man5/waybar-styles.5.gz
+/usr/share/man/man5/waybar-sway-language.5.gz
+/usr/share/man/man5/waybar-sway-mode.5.gz
+/usr/share/man/man5/waybar-sway-scratchpad.5.gz
+/usr/share/man/man5/waybar-sway-window.5.gz
+/usr/share/man/man5/waybar-sway-workspaces.5.gz
+/usr/share/man/man5/waybar-systemd-failed-units.5.gz
+/usr/share/man/man5/waybar-temperature.5.gz
+/usr/share/man/man5/waybar-tray.5.gz
+/usr/share/man/man5/waybar-upower.5.gz
+/usr/share/man/man5/waybar-wireplumber.5.gz
+/usr/share/man/man5/waybar-wlr-taskbar.5.gz
+/usr/share/man/man5/waybar.5.gz
+
+========== xdg-desktop-portal-hyprland ==========
+xdg-desktop-portal-hyprland-1.4.1-1.2.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/bin/hyprland-share-picker
+/usr/lib/systemd/user/xdg-desktop-portal-hyprland.service
+/usr/libexec/xdg-desktop-portal-hyprland
+/usr/share/dbus-1/services/org.freedesktop.impl.portal.desktop.hyprland.service
+/usr/share/doc/packages/xdg-desktop-portal-hyprland
+/usr/share/doc/packages/xdg-desktop-portal-hyprland/CONTRIBUTING.md
+/usr/share/doc/packages/xdg-desktop-portal-hyprland/README.md
+/usr/share/licenses/xdg-desktop-portal-hyprland
+/usr/share/licenses/xdg-desktop-portal-hyprland/LICENSE
+/usr/share/xdg-desktop-portal
+/usr/share/xdg-desktop-portal/portals
+/usr/share/xdg-desktop-portal/portals/hyprland.portal
+
+========== yazi ==========
+yazi-26.8.15-77.7.x86_64
+
+--- RPM-designated configuration files ---
+
+--- Complete installed file list ---
+/usr/bin/ya
+/usr/bin/yazi
+/usr/share/applications/yazi.desktop
+/usr/share/doc/packages/yazi
+/usr/share/doc/packages/yazi/README.md
+/usr/share/licenses/yazi
+/usr/share/licenses/yazi/LICENSE
+/usr/share/pixmaps/yazi.png
