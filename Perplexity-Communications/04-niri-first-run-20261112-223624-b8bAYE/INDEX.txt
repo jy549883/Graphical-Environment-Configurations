@@ -1,0 +1,8 @@
+Original report: report.txt
+
+Chunk sizes in bytes:
+ 7977 /mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/Perplexity-Communications/04-niri-first-run-20261112-223624-b8bAYE/part-001.txt
+ 7937 /mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/Perplexity-Communications/04-niri-first-run-20261112-223624-b8bAYE/part-002.txt
+ 7969 /mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/Perplexity-Communications/04-niri-first-run-20261112-223624-b8bAYE/part-003.txt
+ 7509 /mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/Perplexity-Communications/04-niri-first-run-20261112-223624-b8bAYE/part-004.txt
+31392 total
