@@ -1,0 +1,124 @@
+=== Current desktop ===
+niri
+
+=== Brave executables ===
+
+brave-browser -> /usr/bin/brave-browser
+/usr/bin/brave-browser: symbolic link to /etc/alternatives/brave-browser
+--- Launcher script ---
+#!/bin/bash
+#
+# Copyright 2011 The Chromium Authors
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+# Let the wrapped binary know that it has been run through the wrapper.
+export CHROME_WRAPPER="`readlink -f "$0"`"
+
+HERE="`dirname "$CHROME_WRAPPER"`"
+
+# Use system xdg utilities. But first create mimeapps.list if it doesn't
+# exist; some systems have bugs in xdg-mime that make it fail without it.
+xdg_app_dir="${XDG_DATA_HOME:-$HOME/.local/share/applications}"
+mkdir -p "$xdg_app_dir"
+[ -f "$xdg_app_dir/mimeapps.list" ] || touch "$xdg_app_dir/mimeapps.list"
+
+export CHROME_VERSION_EXTRA="stable"
+
+# We don't want bug-buddy intercepting our crashes. http://crbug.com/41012584
+export GNOME_DISABLE_CRASH_DIALOG=SET_BY_GOOGLE_CHROME
+
+# Sanitize std{in,out,err} because they'll be shared with untrusted child
+# processes (http://crbug.com/40079595).
+exec < /dev/null
+exec > >(exec cat)
+exec 2> >(exec cat >&2)
+
+# Note: exec -a below is a bashism.
+"$HERE/brave" "$@" || true
+
+brave-browser-stable -> /usr/bin/brave-browser-stable
+/usr/bin/brave-browser-stable: symbolic link to /opt/brave.com/brave/brave-browser
+--- Launcher script ---
+#!/bin/bash
+#
+# Copyright 2011 The Chromium Authors
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+# Let the wrapped binary know that it has been run through the wrapper.
+export CHROME_WRAPPER="`readlink -f "$0"`"
+
+HERE="`dirname "$CHROME_WRAPPER"`"
+
+# Use system xdg utilities. But first create mimeapps.list if it doesn't
+# exist; some systems have bugs in xdg-mime that make it fail without it.
+xdg_app_dir="${XDG_DATA_HOME:-$HOME/.local/share/applications}"
+mkdir -p "$xdg_app_dir"
+[ -f "$xdg_app_dir/mimeapps.list" ] || touch "$xdg_app_dir/mimeapps.list"
+
+export CHROME_VERSION_EXTRA="stable"
+
+# We don't want bug-buddy intercepting our crashes. http://crbug.com/41012584
+export GNOME_DISABLE_CRASH_DIALOG=SET_BY_GOOGLE_CHROME
+
+# Sanitize std{in,out,err} because they'll be shared with untrusted child
+# processes (http://crbug.com/40079595).
+exec < /dev/null
+exec > >(exec cat)
+exec 2> >(exec cat >&2)
+
+# Note: exec -a below is a bashism.
+"$HERE/brave" "$@" || true
+
+=== Brave desktop launch commands ===
+/usr/share/applications/brave-browser.desktop:3:Name=Brave Web Browser
+/usr/share/applications/brave-browser.desktop:108:Exec=/usr/bin/brave-browser-stable %U
+/usr/share/applications/brave-browser.desktop:120:Name=New Window
+/usr/share/applications/brave-browser.desktop:171:Exec=/usr/bin/brave-browser-stable
+/usr/share/applications/brave-browser.desktop:174:Name=New Incognito Window
+/usr/share/applications/brave-browser.desktop:223:Exec=/usr/bin/brave-browser-stable --incognito
+/usr/share/applications/com.brave.Browser.desktop:3:Name=Brave Web Browser
+/usr/share/applications/com.brave.Browser.desktop:108:Exec=/usr/bin/brave-browser-stable %U
+/usr/share/applications/com.brave.Browser.desktop:125:Name=New Window
+/usr/share/applications/com.brave.Browser.desktop:176:Exec=/usr/bin/brave-browser-stable
+/usr/share/applications/com.brave.Browser.desktop:179:Name=New Incognito Window
+/usr/share/applications/com.brave.Browser.desktop:228:Exec=/usr/bin/brave-browser-stable --incognito
+/home/jy549883/.local/share/applications/OBS.3rdParty-Repositories-openSUSE-brave-browser.desktop:3:Name=Brave Web Browser (on OBS.3rdParty-Repositories-openSUSE)
+/home/jy549883/.local/share/applications/OBS.3rdParty-Repositories-openSUSE-brave-browser.desktop:108:Exec=/usr/bin/distrobox-enter  -n OBS.3rdParty-Repositories-openSUSE  --   /usr/bin/brave-browser-stable  %U 
+/home/jy549883/.local/share/applications/OBS.3rdParty-Repositories-openSUSE-brave-browser.desktop:120:Name=New Window (on OBS.3rdParty-Repositories-openSUSE)
+/home/jy549883/.local/share/applications/OBS.3rdParty-Repositories-openSUSE-brave-browser.desktop:171:Exec=/usr/bin/distrobox-enter  -n OBS.3rdParty-Repositories-openSUSE  --   /usr/bin/brave-browser-stable 
+/home/jy549883/.local/share/applications/OBS.3rdParty-Repositories-openSUSE-brave-browser.desktop:174:Name=New Incognito Window (on OBS.3rdParty-Repositories-openSUSE)
+/home/jy549883/.local/share/applications/OBS.3rdParty-Repositories-openSUSE-brave-browser.desktop:223:Exec=/usr/bin/distrobox-enter  -n OBS.3rdParty-Repositories-openSUSE  --   /usr/bin/brave-browser-stable --incognito 
+
+=== Existing Brave flags files ===
+
+--- /etc/default/brave-browser ---
+repo_add_once="true"
+
+=== Installed wallet packages ===
+kf6-kwallet
+kf6-kwallet-tools
+kwalletd6
+kwalletmanager
+libsvn_auth_kwallet-1-0
+pam_kwallet6
+pam_kwallet6-32bit
+pam_kwallet6-common
+signon-kwallet-extension
+
+=== Running wallet daemons ===
+   2708 ksecretd
+  27182 ksecretd
+  80120 ksecretd
+ 108649 ksecretd
+ 116350 gnome-keyring-d
+ 116357 ksecretd
+ 116919 gnome-keyring-d
+
+=== Registered user D-Bus wallet services ===
+org.freedesktop.impl.portal.desktop.kwallet       - -               -        (activatable) -                 -       -
+org.freedesktop.secrets                      116350 gnome-keyring-d jy549883 :1.1210       session-29.scope  29      -
+org.kde.kwalletd5                                 - -               -        (activatable) -                 -       -
+org.kde.kwalletd6                                 - -               -        (activatable) -                 -       -
+org.kde.kwalletmanager                            - -               -        (activatable) -                 -       -
