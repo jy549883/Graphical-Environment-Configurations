@@ -1,0 +1,137 @@
+=== Session ===
+Desktop: niri
+Session ID: 29
+D-Bus address: unix:path=/run/user/1000/bus
+
+=== Secret-service D-Bus activation definitions ===
+
+--- /usr/share/dbus-1/services/org.kde.kwalletmanager.service ---
+[D-BUS Service]
+Name=org.kde.kwalletmanager
+Exec=/usr/bin/kwalletmanager5
+
+--- /usr/share/dbus-1/services/org.freedesktop.impl.portal.desktop.kwallet.service ---
+[D-BUS Service]
+Name=org.freedesktop.impl.portal.desktop.kwallet
+Exec=/usr/bin/ksecretd
+
+--- /usr/share/dbus-1/services/org.kde.kwalletd5.service ---
+[D-BUS Service]
+Name=org.kde.kwalletd5
+Exec=/usr/bin/kwalletd6
+
+--- /usr/share/dbus-1/services/org.kde.kwalletd6.service ---
+[D-BUS Service]
+Name=org.kde.kwalletd6
+Exec=/usr/bin/kwalletd6
+
+--- /usr/share/dbus-1/services/org.kde.secretservicecompat.service ---
+[D-BUS Service]
+Name=org.kde.secretservicecompat
+Exec=/usr/bin/ksecretd
+
+--- /usr/share/dbus-1/services/org.freedesktop.impl.portal.Secret.service ---
+[D-BUS Service]
+Name=org.freedesktop.impl.portal.Secret
+Exec=/usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+
+--- /usr/share/dbus-1/services/org.freedesktop.secrets.service ---
+[D-BUS Service]
+Name=org.freedesktop.secrets
+Exec=/usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+
+--- /usr/share/dbus-1/services/org.gnome.keyring.service ---
+[D-BUS Service]
+Name=org.gnome.keyring
+Exec=/usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+
+=== Relevant user-unit definitions and autostart entries ===
+/usr/lib/systemd/user/plasma-kwallet-pam.service:2:Description=Unlock kwallet from pam credentials
+/usr/lib/systemd/user/plasma-kwallet-pam.service:8:ExecStart=/usr/libexec/pam_kwallet_init
+/usr/lib/systemd/user/plasma-workspace.target:12:Wants=plasma-kwallet-pam.service
+/usr/lib/systemd/user/gnome-keyring-daemon.service:4:Requires=gnome-keyring-daemon.socket
+/usr/lib/systemd/user/gnome-keyring-daemon.service:9:ExecStart=/usr/bin/gnome-keyring-daemon --foreground --components="pkcs11,secrets" --control-directory=%t/keyring
+/usr/lib/systemd/user/gnome-keyring-daemon.service:13:Also=gnome-keyring-daemon.socket
+/etc/xdg/autostart/baloo_file.desktop:9:OnlyShowIn=KDE;GNOME;Unity;XFCE
+/etc/xdg/autostart/xembedsniproxy.desktop:64:OnlyShowIn=KDE;
+/etc/xdg/autostart/kaccess.desktop:102:OnlyShowIn=KDE
+/etc/xdg/autostart/polkit-gnome-authentication-agent-1.desktop:87:NotShowIn=KDE;Pantheon;Budgie;
+/etc/xdg/autostart/xiccd.desktop:8:NotShowIn=GNOME;KDE;
+/etc/xdg/autostart/localsearch-3.desktop:14:OnlyShowIn=GNOME;KDE;XFCE;X-IVI;Unity;
+/etc/xdg/autostart/gnome-keyring-pkcs11.desktop:162:Exec=/usr/bin/gnome-keyring-daemon --start --components=pkcs11
+/etc/xdg/autostart/gnome-keyring-pkcs11.desktop:163:OnlyShowIn=GNOME;Unity;MATE;XFCE;
+/etc/xdg/autostart/gnome-keyring-secrets.desktop:161:Exec=/usr/bin/gnome-keyring-daemon --start --components=secrets
+/etc/xdg/autostart/gnome-keyring-secrets.desktop:162:OnlyShowIn=GNOME;Unity;MATE;XFCE;
+/etc/xdg/autostart/gnome-keyring-ssh.desktop:162:Exec=/usr/bin/gnome-keyring-daemon --start --components=ssh
+/etc/xdg/autostart/gnome-keyring-ssh.desktop:163:OnlyShowIn=GNOME;Unity;MATE;XFCE;
+/etc/xdg/autostart/org.gnome.Evolution-alarm-notify.desktop:63:NotShowIn=GNOME;
+/etc/xdg/autostart/orca-autostart.desktop:68:OnlyShowIn=GNOME;MATE;Unity;Cinnamon;
+/etc/xdg/autostart/gmenudbusmenuproxy.desktop:65:OnlyShowIn=KDE;
+/etc/xdg/autostart/org.kde.plasma-fallback-session-restore.desktop:56:OnlyShowIn=KDE;
+/etc/xdg/autostart/org.kde.plasmashell.desktop:48:OnlyShowIn=KDE;
+/etc/xdg/autostart/powerdevil.desktop:63:OnlyShowIn=KDE;
+/etc/xdg/autostart/polkit-kde-authentication-agent-1.desktop:120:OnlyShowIn=KDE;
+/etc/xdg/autostart/org.kde.discover.notifier.desktop:68:OnlyShowIn=KDE
+/etc/xdg/autostart/pam_kwallet_init.desktop:111:Exec=/usr/libexec/pam_kwallet_init
+/etc/xdg/autostart/print-applet.desktop:120:NotShowIn=KDE;GNOME;Cinnamon;
+/usr/etc/xdg/autostart/at-spi-dbus-bus.desktop:5:OnlyShowIn=GNOME;Unity;
+/usr/etc/xdg/autostart/geoclue-demo-agent.desktop:13:NotShowIn=GNOME;
+
+=== KDE wallet configuration (non-secret settings file) ===
+[Wallet]
+First Use=false
+
+=== PAM wallet/keyring integration references ===
+/etc/pam.d/common-auth:36:auth	optional	pam_gnome_keyring.so	only_if=gdm,gdm-password,lxdm,lightdm,mdm,sddm 
+/etc/pam.d/common-auth:37:auth	optional	pam_kwallet5.so
+/etc/pam.d/common-password:35:password	optional	pam_gnome_keyring.so	use_authtok
+/etc/pam.d/common-password:36:password	optional	pam_kwallet5.so
+/etc/pam.d/common-session:41:session	optional	pam_gnome_keyring.so	auto_start only_if=gdm,gdm-password,lxdm,lightdm,mdm,sddm 
+/etc/pam.d/common-session:42:session	optional	pam_kwallet5.so	
+/etc/pam.d/common-session-nonlogin:38:session	optional	pam_gnome_keyring.so	auto_start only_if=gdm,gdm-password,lxdm,lightdm,mdm,sddm 
+/etc/pam.d/common-session-nonlogin:39:session	optional	pam_kwallet5.so	
+/etc/pam.d/common-auth-pc:36:auth	optional	pam_gnome_keyring.so	only_if=gdm,gdm-password,lxdm,lightdm,mdm,sddm 
+/etc/pam.d/common-auth-pc:37:auth	optional	pam_kwallet5.so
+/etc/pam.d/common-password-pc:35:password	optional	pam_gnome_keyring.so	use_authtok
+/etc/pam.d/common-password-pc:36:password	optional	pam_kwallet5.so
+/etc/pam.d/common-session-pc:41:session	optional	pam_gnome_keyring.so	auto_start only_if=gdm,gdm-password,lxdm,lightdm,mdm,sddm 
+/etc/pam.d/common-session-pc:42:session	optional	pam_kwallet5.so	
+/etc/pam.d/common-session-nonlogin-pc:38:session	optional	pam_gnome_keyring.so	auto_start only_if=gdm,gdm-password,lxdm,lightdm,mdm,sddm 
+/etc/pam.d/common-session-nonlogin-pc:39:session	optional	pam_kwallet5.so	
+
+=== Wallet and keyring user-service state ===
+  app-gnome\x2dkeyring\x2dpkcs11@autostart.service                                                                                                              loaded    inactive dead      Certificate and Key Storage
+  app-gnome\x2dkeyring\x2dsecrets@autostart.service                                                                                                             loaded    inactive dead      Secret Storage Service
+  app-gnome\x2dkeyring\x2dssh@autostart.service                                                                                                                 loaded    inactive dead      SSH Key Agent
+  app-dbus\x2d:1.2\x2dorg.kde.kwalletd6.slice                                                                                                                   loaded    active   active    Slice /app/dbus-:1.2-org.kde.kwalletd6
+
+=== Wallet processes and their parent processes ===
+   2708       1 Thu Nov 12 21:20:19 2026 ksecretd
+  27182       1 Thu Nov 12 23:25:21 2026 ksecretd
+  80120       1 Fri Nov 13 00:15:33 2026 ksecretd
+ 108649       1 Fri Nov 13 01:49:25 2026 ksecretd
+ 116350       1 Fri Nov 13 01:54:50 2026 gnome-keyring-d
+ 116357       1 Fri Nov 13 01:54:50 2026 ksecretd
+ 116919    2624 Fri Nov 13 01:54:51 2026 gnome-keyring-d
+
+=== Active and activatable wallet D-Bus names ===
+org.freedesktop.impl.portal.desktop.kwallet       - -               -        (activatable) -                 -       -
+org.freedesktop.secrets                      116350 gnome-keyring-d jy549883 :1.1210       session-29.scope  29      -
+org.kde.kwalletd5                                 - -               -        (activatable) -                 -       -
+org.kde.kwalletd6                                 - -               -        (activatable) -                 -       -
+org.kde.kwalletmanager                            - -               -        (activatable) -                 -       -
+
+=== Portal selection references ===
+/usr/share/xdg-desktop-portal/portals/kwallet.portal:2:DBusName=org.freedesktop.impl.portal.desktop.kwallet
+/usr/share/xdg-desktop-portal/portals/kwallet.portal:3:Interfaces=org.freedesktop.impl.portal.Secret;
+/usr/share/xdg-desktop-portal/portals/gnome-keyring.portal:3:Interfaces=org.freedesktop.impl.portal.Secret
+/usr/share/xdg-desktop-portal/kde-portals.conf:1:[preferred]
+/usr/share/xdg-desktop-portal/kde-portals.conf:2:default=kde
+/usr/share/xdg-desktop-portal/kde-portals.conf:4:org.freedesktop.impl.portal.Secret=kwallet
+/usr/share/xdg-desktop-portal/wlroots-portals.conf:1:[preferred]
+/usr/share/xdg-desktop-portal/wlroots-portals.conf:3:default=gtk
+/usr/share/xdg-desktop-portal/hyprland-portals.conf:1:[preferred]
+/usr/share/xdg-desktop-portal/hyprland-portals.conf:2:default=hyprland;gtk
+/usr/share/xdg-desktop-portal/niri-portals.conf:1:[preferred]
+/usr/share/xdg-desktop-portal/niri-portals.conf:2:default=gnome;gtk;
+/usr/share/xdg-desktop-portal/niri-portals.conf:5:org.freedesktop.impl.portal.Secret=gnome-keyring;

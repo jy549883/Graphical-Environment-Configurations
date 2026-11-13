@@ -1,0 +1,9 @@
+/usr/share/xdg-desktop-portal/kde-portals.conf:2:default=kde
+/usr/share/xdg-desktop-portal/kde-portals.conf:4:org.freedesktop.impl.portal.Secret=kwallet
+/usr/share/xdg-desktop-portal/wlroots-portals.conf:1:[preferred]
+/usr/share/xdg-desktop-portal/wlroots-portals.conf:3:default=gtk
+/usr/share/xdg-desktop-portal/hyprland-portals.conf:1:[preferred]
+/usr/share/xdg-desktop-portal/hyprland-portals.conf:2:default=hyprland;gtk
+/usr/share/xdg-desktop-portal/niri-portals.conf:1:[preferred]
+/usr/share/xdg-desktop-portal/niri-portals.conf:2:default=gnome;gtk;
+/usr/share/xdg-desktop-portal/niri-portals.conf:5:org.freedesktop.impl.portal.Secret=gnome-keyring;

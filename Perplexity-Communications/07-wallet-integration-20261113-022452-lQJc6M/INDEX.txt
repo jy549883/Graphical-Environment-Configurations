@@ -1,0 +1,5 @@
+Report: report.txt
+
+7978 /mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/Perplexity-Communications/07-wallet-integration-20261113-022452-lQJc6M/part-001.txt
+ 655 /mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/Perplexity-Communications/07-wallet-integration-20261113-022452-lQJc6M/part-002.txt
+8633 total
