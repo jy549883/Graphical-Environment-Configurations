@@ -1,0 +1,100 @@
+=== Current session ===
+Desktop: niri
+Session type: wayland
+
+=== Shell and desktop utility executables ===
+/usr/bin/waybar
+/usr/bin/mako
+/usr/bin/fuzzel
+/usr/bin/swaylock
+/usr/bin/swayidle
+/usr/bin/wpctl
+/usr/bin/playerctl
+
+=== Relevant installed packages ===
+fuzzel 1.14.0-1.6
+fuzzel-fish-completion 1.14.0-1.6
+fuzzel-zsh-completion 1.14.0-1.6
+libpolkit-agent-1-0 128-1.1
+libpolkit-gobject-1-0 128-1.1
+libpolkit-qt5-1-1 0.201.1-1.4
+libpolkit-qt6-1-1 0.201.1-1.4
+mako 1.11.0-1.4
+polkit 128-1.1
+polkit-default-privs 1550+20261016.b8e1631-1.1
+polkit-gnome 0.105-17.4
+polkit-kde-agent-6 6.8.2-1.1
+swayidle 1.9.1-1.1
+swaylock 1.8.6-1.2
+typelib-1_0-Polkit-1_0 128-1.1
+waybar 0.15.0-1.7
+waybar-branding-openSUSE 0.17.0-1.3
+
+=== Shell-related user units ===
+app-niri-fuzzel-136108.scope                                           transient -
+app-niri-fuzzel-137175.scope                                           transient -
+app-niri-fuzzel-171911.scope                                           transient -
+app-niri-mako-132521.scope                                             transient -
+app-niri-spotify-132513.scope                                          transient -
+app-niri-waybar-132518.scope                                           transient -
+app-polkit\x2dgnome\x2dauthentication\x2dagent\x2d1@autostart.service  generated -
+niri.service                                                           static    -
+plasma-polkit-agent.service                                            static    -
+waybar.service                                                         disabled  disabled
+niri-shutdown.target                                                   static    -
+
+=== Current session service state ===
+  app-niri-fuzzel-136108.scope                                                                                                                                  loaded    active   running   app-niri-fuzzel-136108.scope
+  app-niri-fuzzel-137175.scope                                                                                                                                  loaded    active   running   app-niri-fuzzel-137175.scope
+  app-niri-fuzzel-171911.scope                                                                                                                                  loaded    active   running   app-niri-fuzzel-171911.scope
+  app-niri-mako-132521.scope                                                                                                                                    loaded    active   running   app-niri-mako-132521.scope
+  app-niri-spotify-132513.scope                                                                                                                                 loaded    active   running   app-niri-spotify-132513.scope
+  app-niri-waybar-132518.scope                                                                                                                                  loaded    active   running   app-niri-waybar-132518.scope
+  app-polkit\x2dgnome\x2dauthentication\x2dagent\x2d1@autostart.service                                                                                         loaded    active   running   PolicyKit Authentication Agent
+  niri.service                                                                                                                                                  loaded    active   running   A scrollable-tiling Wayland compositor
+
+=== Installed DMS service definition ===
+No files found for dms.service.
+
+=== Running desktop components ===
+ 132518 waybar
+ 132521 mako
+ 132593 swayidle
+ 132613 polkit-gnome-au
+
+=== Existing configuration locations (names only) ===
+
+=== Explicit niri startup and shell references ===
+/home/jy549883/.config/niri/config.kdl.bak:28:    // Next sections include libinput settings.
+/home/jy549883/.config/niri/config.kdl.bak:265:// Add lines like this to spawn processes at startup.
+/home/jy549883/.config/niri/config.kdl.bak:270:// This line starts waybar, a commonly used bar for Wayland compositors.
+/home/jy549883/.config/niri/config.kdl.bak:271:spawn-at-startup "waybar"
+/home/jy549883/.config/niri/config.kdl.bak:273:// To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
+/home/jy549883/.config/niri/config.kdl.bak:274:// spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
+/home/jy549883/.config/niri/config.kdl.bak:366:    Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+/home/jy549883/.config/niri/config.kdl.bak:367:    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+/home/jy549883/.config/niri/config.kdl:11:spawn-at-startup "/usr/libexec/pam_kwallet_init"
+/home/jy549883/.config/niri/config.kdl:14:spawn-at-startup "mako"
+/home/jy549883/.config/niri/config.kdl:15:spawn-at-startup "spotify"
+/home/jy549883/.config/niri/config.kdl:40:    // Next sections include libinput settings.
+/home/jy549883/.config/niri/config.kdl:277:// Add lines like this to spawn processes at startup.
+/home/jy549883/.config/niri/config.kdl:282:// This line starts waybar, a commonly used bar for Wayland compositors.
+/home/jy549883/.config/niri/config.kdl:283:spawn-at-startup "waybar"
+/home/jy549883/.config/niri/config.kdl:285:// To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
+/home/jy549883/.config/niri/config.kdl:286:// spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
+/home/jy549883/.config/niri/config.kdl:378:    Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+/home/jy549883/.config/niri/config.kdl:379:    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+/home/jy549883/.config/niri/config.kdl.before-kwallet-20261113-142846:11:spawn-at-startup "/usr/libexec/pam_kwallet_init"
+/home/jy549883/.config/niri/config.kdl.before-kwallet-20261113-142846:14:spawn-at-startup "mako"
+/home/jy549883/.config/niri/config.kdl.before-kwallet-20261113-142846:15:spawn-at-startup "spotify"
+/home/jy549883/.config/niri/config.kdl.before-kwallet-20261113-142846:40:    // Next sections include libinput settings.
+/home/jy549883/.config/niri/config.kdl.before-kwallet-20261113-142846:277:// Add lines like this to spawn processes at startup.
+/home/jy549883/.config/niri/config.kdl.before-kwallet-20261113-142846:282:// This line starts waybar, a commonly used bar for Wayland compositors.
+/home/jy549883/.config/niri/config.kdl.before-kwallet-20261113-142846:283:spawn-at-startup "waybar"
+/home/jy549883/.config/niri/config.kdl.before-kwallet-20261113-142846:285:// To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
+/home/jy549883/.config/niri/config.kdl.before-kwallet-20261113-142846:286:// spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
+/home/jy549883/.config/niri/config.kdl.before-kwallet-20261113-142846:378:    Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+/home/jy549883/.config/niri/config.kdl.before-kwallet-20261113-142846:379:    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+
+=== Notification service owner ===
+org.freedesktop.Notifications                132521 mako            jy549883 :1.300        user@1000.service -       -

@@ -1,0 +1,3 @@
+Report: report.txt
+
+7284 /mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/Perplexity-Communications/08-niri-shell-baseline-20261113-153406-n1yl2v/part-001.txt
