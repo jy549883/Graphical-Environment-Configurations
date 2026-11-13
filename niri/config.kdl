@@ -634,3 +634,16 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 }
+
+// Explicit physical monitor layout, matched by manufacturer/model/serial.
+output "Dell Inc. DELL P2715Q 54KKD75R410L" {
+    mode "3840x2160@60.000"
+    scale 1.5
+    position x=2560 y=0
+}
+
+output "Dell Inc. DELL P2715Q 54KKD75R600L" {
+    mode "3840x2160@60.000"
+    scale 1.5
+    position x=0 y=0
+}

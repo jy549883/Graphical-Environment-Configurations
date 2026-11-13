@@ -1,0 +1,124 @@
+[2m2026-11-13T08:04:24.781945Z[0m [34mDEBUG[0m [2mniri_config[0m[2m:[0m loaded config from "/mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/niri/.monitor-check-rtscvlk2.kdl"
+[2m2026-11-13T08:04:24.781975Z[0m [32m INFO[0m [2mniri[0m[2m:[0m config is valid
+Repository monitor configuration updated and validated.
+[2m2026-11-13T08:04:24.833946Z[0m [34mDEBUG[0m [2mniri_config[0m[2m:[0m loaded config from "/mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/niri/config.kdl"
+[2m2026-11-13T08:04:24.833969Z[0m [32m INFO[0m [2mniri[0m[2m:[0m config is valid
+
+Tool: niri
+Repository: /mnt/Shared/Data/Git.Repository/jy549883/Graphical-Environment-Configurations/niri/config.kdl
+Deployed:   /home/jy549883/.config/graphical-environment-configurations/niri/config.kdl
+Live link:  /home/jy549883/.config/niri/config.kdl
+Copy needed: True; link needed: False
+Adjacent backup required for: /home/jy549883/.config/graphical-environment-configurations/niri/config.kdl
+BACKUP /home/jy549883/.config/graphical-environment-configurations/niri/config.kdl
+    TO /home/jy549883/.config/graphical-environment-configurations/niri/config.kdl.bak
+VERIFIED /home/jy549883/.config/niri/config.kdl -> /home/jy549883/.config/graphical-environment-configurations/niri/config.kdl
+
+Deployment complete. No services were enabled or restarted.
+
+=== Application-facing configuration link ===
+lrwxrwxrwx. 1 jy549883 jy549883 75 Nov 13 01:45 /home/jy549883/.config/niri/config.kdl -> /home/jy549883/.config/graphical-environment-configurations/niri/config.kdl
+
+=== Current niri outputs after deployment ===
+Output "Dell Inc. DELL P2715Q 54KKD75R410L" (HDMI-A-2)
+  Current mode: 3840x2160 @ 60.000 Hz
+  Variable refresh rate: not supported
+  Physical size: 600x340 mm
+  Logical position: 0, 0
+  Logical size: 2560x1440
+  Scale: 1.5
+  Transform: normal
+  Available modes:
+    3840x2160@60.000 (preferred)
+    3840x2160@60.000 (current)
+    3840x2160@59.940
+    3840x2160@50.000
+    3840x2160@30.000
+    3840x2160@30.000
+    3840x2160@29.970
+    3840x2160@25.000
+    3840x2160@24.000
+    3840x2160@23.976
+    1920x1200@59.950
+    1920x1080@60.000
+    1920x1080@60.000
+    1920x1080@59.940
+    1920x1080@50.000
+    1920x1080@24.000
+    1920x1080@23.976
+    1600x1200@60.000
+    1680x1050@59.883
+    1280x1024@75.025
+    1280x1024@60.020
+    1280x800@59.910
+    1152x864@75.000
+    1280x720@60.000
+    1280x720@59.940
+    1280x720@50.000
+    1024x768@75.029
+    1024x768@60.004
+    800x600@75.000
+    800x600@60.317
+    720x576@50.000
+    720x576@50.000
+    720x480@60.000
+    720x480@60.000
+    720x480@59.940
+    720x480@59.940
+    640x480@75.000
+    640x480@60.000
+    640x480@59.940
+    640x480@59.940
+    720x400@70.082
+
+Output "Dell Inc. DELL P2715Q 54KKD75R600L" (HDMI-A-1)
+  Current mode: 3840x2160 @ 60.000 Hz
+  Variable refresh rate: not supported
+  Physical size: 600x340 mm
+  Logical position: 2560, 0
+  Logical size: 2560x1440
+  Scale: 1.5
+  Transform: normal
+  Available modes:
+    3840x2160@60.000 (preferred)
+    3840x2160@60.000 (current)
+    3840x2160@59.940
+    3840x2160@50.000
+    3840x2160@30.000
+    3840x2160@30.000
+    3840x2160@29.970
+    3840x2160@25.000
+    3840x2160@24.000
+    3840x2160@23.976
+    1920x1200@59.950
+    1920x1080@60.000
+    1920x1080@60.000
+    1920x1080@59.940
+    1920x1080@50.000
+    1920x1080@24.000
+    1920x1080@23.976
+    1600x1200@60.000
+    1680x1050@59.883
+    1280x1024@75.025
+    1280x1024@60.020
+    1280x800@59.910
+    1152x864@75.000
+    1280x720@60.000
+    1280x720@59.940
+    1280x720@50.000
+    1024x768@75.029
+    1024x768@60.004
+    800x600@75.000
+    800x600@60.317
+    720x576@50.000
+    720x576@50.000
+    720x480@60.000
+    720x480@60.000
+    720x480@59.940
+    720x480@59.940
+    640x480@75.000
+    640x480@60.000
+    640x480@59.940
+    640x480@59.940
+    720x400@70.082
+
