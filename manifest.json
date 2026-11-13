@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "deployment_root": "~/.config/graphical-environment-configurations",
+  "entries": [
+    {
+      "tool": "niri",
+      "source_path": "~/.config/niri/config.kdl",
+      "repository_path": "niri/config.kdl",
+      "deployment_path": "niri/config.kdl",
+      "system_path": "~/.config/niri/config.kdl",
+      "role": "active-configuration",
+      "deploy": true,
+      "link": true,
+      "required": true
+    }
+  ]
+}
