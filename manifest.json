@@ -12,6 +12,50 @@
       "deploy": true,
       "link": true,
       "required": true
+    },
+    {
+      "tool": "wallet-integration",
+      "source_path": "~/.config/xdg-desktop-portal/niri-portals.conf",
+      "repository_path": "wallet-integration/xdg-desktop-portal/niri-portals.conf",
+      "deployment_path": "wallet-integration/xdg-desktop-portal/niri-portals.conf",
+      "system_path": "~/.config/xdg-desktop-portal/niri-portals.conf",
+      "role": "active-configuration",
+      "deploy": true,
+      "link": true,
+      "required": true
+    },
+    {
+      "tool": "wallet-integration",
+      "source_path": "~/.config/xdg-desktop-portal/hyprland-portals.conf",
+      "repository_path": "wallet-integration/xdg-desktop-portal/hyprland-portals.conf",
+      "deployment_path": "wallet-integration/xdg-desktop-portal/hyprland-portals.conf",
+      "system_path": "~/.config/xdg-desktop-portal/hyprland-portals.conf",
+      "role": "active-configuration",
+      "deploy": true,
+      "link": true,
+      "required": true
+    },
+    {
+      "tool": "wallet-integration",
+      "source_path": "~/.local/share/dbus-1/services/org.freedesktop.secrets.service",
+      "repository_path": "wallet-integration/dbus-1/services/org.freedesktop.secrets.service",
+      "deployment_path": "wallet-integration/dbus-1/services/org.freedesktop.secrets.service",
+      "system_path": "~/.local/share/dbus-1/services/org.freedesktop.secrets.service",
+      "role": "active-configuration",
+      "deploy": true,
+      "link": true,
+      "required": true
+    },
+    {
+      "tool": "wallet-integration",
+      "source_path": "~/.config/autostart/gnome-keyring-secrets.desktop",
+      "repository_path": "wallet-integration/autostart/gnome-keyring-secrets.desktop",
+      "deployment_path": "wallet-integration/autostart/gnome-keyring-secrets.desktop",
+      "system_path": "~/.config/autostart/gnome-keyring-secrets.desktop",
+      "role": "active-configuration",
+      "deploy": true,
+      "link": true,
+      "required": true
     }
   ]
 }

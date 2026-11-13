@@ -7,6 +7,14 @@
 // Check the wiki for a full description of the configuration:
 // https://niri-wm.github.io/niri/Configuration:-Introduction
 
+// Complete the KWallet PAM handoff after the graphical session starts.
+spawn-at-startup "/usr/libexec/pam_kwallet_init"
+
+// Other startup apps.
+spawn-at-startup "mako"
+spawn-at-startup "spotify"
+
+
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Input
